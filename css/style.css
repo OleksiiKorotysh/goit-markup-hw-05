@@ -1,0 +1,119 @@
+:root {
+  --primaly-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+}
+.section-title {
+  color: var(--title-text-color);
+}
+.section-text {
+  color: var(--primaly-text-color);
+}
+/* Fonts */
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Section Site header */
+.header-section {
+  background-color: #ffffff;
+}
+
+/* WebStudio */
+.logo {
+  font-family: Raleway, sans-serif;
+}
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: #2196f3;
+}
+
+/* Menu Nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* E-mail */
+.e-mail {
+  color: #757575;
+}
+.tel {
+  color: #757575;
+}
+.header-section .e-mail:hover,
+.header-section .e-mail:focus {
+  color: var(--accent-text-color);
+}
+.e-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* Tel */
+.tel {
+  color: #757575;
+}
+.header-section .tel:hover,
+.header-section .tel:focus {
+  color: var(--accent-text-color);
+}
+.tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* Section Main */
+
+/* Section hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero .hero-title {
+  color: #ffffff;
+}
+.hero .button {
+  background-color: #2196f3;
+}
+.hero .button {
+  color: #ffffff;
+}
+
+/* Section Peculiarities */
+
+/* Section What are we doing */
+
+/* Section Our team */
+
+/* Section Footer */
+.page-footer {
+  background-color: #2f303a;
+}
+.page-footer .logo {
+  color: #ffffff;
+}
+.logo .logo-web {
+  color: #2196f3;
+}
+.footer-address {
+  color: #ffffff;
+}
