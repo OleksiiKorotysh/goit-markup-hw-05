@@ -39,6 +39,18 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Section Site header */
 .section-header {
   background-color: #ffffff;
@@ -161,9 +173,6 @@ p {
 }
 
 /* Section Peculiarities */
-.peculiarities-title {
-  visibility: hidden;
-}
 .section-peculiarities-list {
   display: flex;
 }
@@ -291,14 +300,9 @@ p {
   background-color: #ffffff;
   padding-bottom: 94px;
 }
-.portfolio-title {
-  visibility: hidden;
-  padding: 0;
-  margin: 0;
-}
 .filters-list {
   justify-content: center;
-  padding-top: 58px;
+  padding-top: 92px;
   display: flex;
 }
 .filters-list li + li {
