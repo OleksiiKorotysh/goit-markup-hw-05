@@ -253,7 +253,8 @@ p {
   background-color: #2f303a;
 }
 .logo-footer {
-  display: flex;
+  display: block;
+  width: 145px;
   padding-top: 60px;
   font-family: var(--secondory-font);
   font-weight: 700;
