@@ -14,6 +14,9 @@ body {
   color: var(--primaly-text-color);
 }
 .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 .link {
@@ -22,11 +25,35 @@ body {
 .button {
   cursor: pointer;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Section Site header */
 .section-header {
   background-color: #ffffff;
 }
-.logo {
+.header-container {
+  display: flex;
+}
+.nav {
+  display: flex;
+}
+.logo-header {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: var(--secondory-font);
   font-weight: 700;
   font-size: 26px;
@@ -34,20 +61,50 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
-.logo-header {
+.logo-accent-header {
   color: #000000;
 }
+.nav {
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  margin-right: 51px;
+}
+.nav-item:last-child {
+  margin: 0px;
+}
 .nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  display: flex;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text-color);
 }
+.header-contacts {
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+}
+.header-contacts-link {
+  margin-right: 50px;
+}
+.header-contacts-link:last-child {
+  margin: 0;
+}
 .contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
@@ -55,16 +112,29 @@ body {
   letter-spacing: 0.02em;
   color: var(--primaly-text-color);
 }
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-text-color);
 }
 
+/* Section Main */
+.section-main {
+  background-color: #ffffff;
+}
 /* Section Hero */
 .hero {
+  height: 600px;
   background-color: #2f303a;
+  align-items: center;
+  text-align: center;
 }
+
 .hero-title {
+  padding-top: 200px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -73,17 +143,17 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   border-radius: 4px;
+  display: inline-block;
+  padding: 8px, 30px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -94,7 +164,15 @@ body {
 .peculiarities-title {
   visibility: hidden;
 }
+.section-peculiarities-list {
+  display: flex;
+}
+.peculiarities-list {
+  margin-right: 30px;
+  width: 270;
+}
 .peculiarities-section-title {
+  margin-top: 94px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -105,16 +183,28 @@ body {
 
 /* Section What are we doing */
 .about-title {
+  margin-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.about-list {
+  display: flex;
+  margin-top: 50px;
+}
+.about-img {
+  margin-right: 30px;
+}
+.about-img:last-child {
+  margin: 0;
 }
 
-/* Section Our team */
+/* Section Team */
 .team-title {
+  margin-top: 188px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -122,7 +212,25 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.team-list {
+  display: flex;
+  margin-top: 50px;
+}
+.team-list li {
+  margin-right: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list li:last-child {
+  margin-right: 0;
+}
+.team-list {
+  padding-bottom: 94px;
+}
 .section-team-title {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -131,6 +239,8 @@ body {
   color: var(--title-text-color);
 }
 .section-team-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -143,21 +253,55 @@ body {
   background-color: #2f303a;
 }
 .logo-footer {
+  display: flex;
+  padding-top: 60px;
+  font-family: var(--secondory-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+.logo-accent-footer {
   color: #ffffff;
 }
 .footer-address {
-  color: #ffffff;
-}
-.footer-address {
+  padding-top: 20px;
+  padding-bottom: 60px;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 .footer-address li + li {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-list {
+  padding-bottom: 9px;
+}
+.footer-address-list {
+  padding-bottom: 6px;
+}
 
+/* Page Portfolio*/
 /* Section Portfolio */
+.section-portfolio {
+  background-color: #ffffff;
+  padding-bottom: 94px;
+}
 .portfolio-title {
   visibility: hidden;
+  padding: 0;
+  margin: 0;
+}
+.filters-list {
+  justify-content: center;
+  padding-top: 58px;
+  display: flex;
+}
+.filters-list li + li {
+  margin-left: 8px;
 }
 .filters-button {
   font-weight: 500;
@@ -165,6 +309,8 @@ body {
   line-height: 1.62;
   text-align: center;
   color: #212121;
+  border: 0;
+  background-color: #ffffff;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -174,8 +320,26 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.work-list:nth-child(3n) {
+  margin-right: 0;
+}
+.work-list {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .section-work-title {
+  margin: 20px 24px 4px 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -183,6 +347,7 @@ body {
   color: var(--title-text-color);
 }
 .section-work-text {
+  margin: 4px 24px 20px 24px;
   font-size: 16px;
   line-height: 1.87;
 }
