@@ -65,6 +65,7 @@ p {
 /* Section Site header */
 .section-header {
   background-color: #ffffff;
+  border: 1px solid #ececec;
 }
 .header-container {
   display: flex;
