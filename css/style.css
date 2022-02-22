@@ -308,6 +308,8 @@ p {
 /* Page Portfolio*/
 /* Section Portfolio */
 .section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #ffffff;
 }
 .button-list:not(:last-child) {
