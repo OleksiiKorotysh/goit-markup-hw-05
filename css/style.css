@@ -37,8 +37,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 h1,
@@ -181,6 +179,7 @@ p {
 /* Section Peculiarities */
 .section-peculiarities-list {
   display: flex;
+  padding-top: 94px;
 }
 .peculiarities-list {
   width: 270px;
@@ -199,8 +198,9 @@ p {
 }
 
 /* Section What are we doing */
-.section-about .container {
-  padding-top: 0;
+.section-about {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .about-title {
   text-align: center;
@@ -221,6 +221,9 @@ p {
 
 /* Section Team */
 .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 .team-title {
@@ -321,8 +324,8 @@ p {
   line-height: 1.62;
   text-align: center;
   color: #212121;
-  border: 0;
-  background-color: #ffffff;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .filters-button:hover,
 .filters-button:focus {
