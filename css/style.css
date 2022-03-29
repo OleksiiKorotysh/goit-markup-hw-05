@@ -31,6 +31,10 @@ img {
   height: auto;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -67,7 +71,6 @@ p {
 }
 .header-container {
   display: flex;
-  padding: 0;
 }
 .nav {
   display: flex;
@@ -179,7 +182,6 @@ p {
 /* Section Peculiarities */
 .section-peculiarities-list {
   display: flex;
-  padding-top: 94px;
 }
 .peculiarities-list {
   width: 270px;
@@ -199,8 +201,7 @@ p {
 
 /* Section What are we doing */
 .section-about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .about-title {
   text-align: center;
@@ -221,9 +222,6 @@ p {
 
 /* Section Team */
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: #f5f4fa;
 }
 .team-title {
@@ -248,7 +246,7 @@ p {
   margin-right: 30px;
 }
 .cads-text {
-  margin: 30px 0;
+  padding: 30px 0;
 }
 .section-team-title {
   margin-bottom: 10px;
@@ -260,7 +258,6 @@ p {
   color: var(--title-text-color);
 }
 .section-team-text {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -273,9 +270,6 @@ p {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.section-footer .container {
-  padding: 0;
 }
 .logo-footer {
   display: block;
@@ -308,8 +302,6 @@ p {
 /* Page Portfolio*/
 /* Section Portfolio */
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #ffffff;
 }
 .button-list:not(:last-child) {
