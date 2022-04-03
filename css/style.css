@@ -314,6 +314,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin-top: 16px;
 }
+.social-network-list li:not(:last-child) {
+  margin-right: 10px;
+}
 .social-network {
   width: 44px;
   height: 44px;
@@ -368,6 +371,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding-bottom: 60px;
 }
 .container-footer {
+  align-items: baseline;
   display: flex;
 }
 .logo-footer {
@@ -393,9 +397,17 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .footer-list-address {
   color: #ffffff;
 }
+.footer-list-address:hover,
+.footer-list-address:focus {
+  color: var(--accent-text-color);
+}
 .footer-list-contacts {
   margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-list-contacts:hover,
+.footer-list-contacts:focus {
+  color: var(--accent-text-color);
 }
 .section-address {
   margin-right: 70px;
