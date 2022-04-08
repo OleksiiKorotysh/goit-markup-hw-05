@@ -279,6 +279,29 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .about-img:not(:last-child) {
   margin-right: 30px;
 }
+.about-img {
+  position: relative;
+  display: flex;
+}
+.about-cads {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.about-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 
 /* Section Team */
 .section-team {
